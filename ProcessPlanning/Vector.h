@@ -7,7 +7,7 @@ namespace ProcessPlanning {
 		public SimpleGeometry
 	{
 	public:
-		Vector(void);
+		Vector(const float x=0.0, const float y=0.0, const float z=0.0);
 		~Vector(void);
 	};
 

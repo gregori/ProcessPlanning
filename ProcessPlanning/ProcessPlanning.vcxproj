@@ -77,7 +77,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="mfc_tutorial1.cpp" />
+    <ClCompile Include="ComplexGeometry.cpp" />
+    <ClCompile Include="Contour.cpp" />
+    <ClCompile Include="GeometryList.cpp" />
+    <ClCompile Include="Offset.cpp" />
+    <ClCompile Include="Point.cpp" />
+    <ClCompile Include="Raster.cpp" />
+    <ClCompile Include="Rect.cpp" />
+    <ClCompile Include="SimpleGeometry.cpp" />
+    <ClCompile Include="PointFactory.cpp" />
+    <ClCompile Include="Slice.cpp" />
+    <ClCompile Include="Solid.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="Vector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ComplexGeometry.h" />
+    <ClInclude Include="Contour.h" />
+    <ClInclude Include="Geometry.h" />
+    <ClInclude Include="GeometryList.h" />
+    <ClInclude Include="Offset.h" />
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="Raster.h" />
+    <ClInclude Include="Rect.h" />
+    <ClInclude Include="SimpleGeometry.h" />
+    <ClInclude Include="PointFactory.h" />
+    <ClInclude Include="Slice.h" />
+    <ClInclude Include="Solid.h" />
+    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="Vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

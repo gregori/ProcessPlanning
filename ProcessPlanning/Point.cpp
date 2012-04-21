@@ -2,7 +2,8 @@
 
 namespace ProcessPlanning
 {
-	Point::Point()
+	Point::Point(const float x, const float y, const float z)
+		: SimpleGeometry(x, y, z)
 	{
 	}
 
