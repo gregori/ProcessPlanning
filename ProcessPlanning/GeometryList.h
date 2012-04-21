@@ -3,7 +3,8 @@
 #include "Geometry.h"
 using namespace std;
 
-namespace ProcessPlanning {
+namespace ProcessPlanning
+{
 	class GeometryList
 	{
 	protected:
@@ -12,7 +13,7 @@ namespace ProcessPlanning {
 	public:
 		GeometryList(void);
 		~GeometryList(void);
-		void insert(const Geometry* item);
+		void insert(Geometry* item);
 	};
 
 }

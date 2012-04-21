@@ -52,6 +52,8 @@ namespace ProcessPlanning
 		coords[0] = x;
 		coords[1] = y;
 		coords[2] = z;
+
+		return coords;
 	}
 
 }

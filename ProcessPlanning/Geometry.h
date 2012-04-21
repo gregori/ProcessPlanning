@@ -2,7 +2,7 @@
 
 namespace ProcessPlanning {
 
-	class Geometry
+class Geometry
 {
 public:
 
@@ -10,7 +10,7 @@ public:
 	{
 	}
 
-	~Geometry(void)
+	virtual ~Geometry(void)
 	{
 	}
 

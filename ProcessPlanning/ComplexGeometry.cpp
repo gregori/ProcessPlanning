@@ -11,7 +11,7 @@ namespace ProcessPlanning
 	{
 	}
 
-	void ComplexGeometry::addGeometry(const Geometry* geom)
+	void ComplexGeometry::addGeometry(Geometry* geom)
 	{
 		geomList.insert(geom);
 	}

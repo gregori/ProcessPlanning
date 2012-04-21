@@ -12,7 +12,7 @@ namespace ProcessPlanning
 	public:
 		ComplexGeometry(void);
 		~ComplexGeometry(void);
-		void addGeometry(const Geometry* geom);
+		void addGeometry(Geometry* geom);
 	};
 
 }

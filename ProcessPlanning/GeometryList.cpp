@@ -11,7 +11,7 @@ namespace ProcessPlanning {
 	{
 	}
 	
-	void GeometryList::insert(const Geometry* item)
+	void GeometryList::insert(Geometry* item)
 	{
 		lGeom.push_back(item);
 	}
