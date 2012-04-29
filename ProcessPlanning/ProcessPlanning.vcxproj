@@ -88,6 +88,7 @@
     <ClCompile Include="PointFactory.cpp" />
     <ClCompile Include="Slice.cpp" />
     <ClCompile Include="Solid.cpp" />
+    <ClCompile Include="Thread.cpp" />
     <ClCompile Include="Triangle.cpp" />
     <ClCompile Include="Vector.cpp" />
   </ItemGroup>
@@ -104,6 +105,7 @@
     <ClInclude Include="PointFactory.h" />
     <ClInclude Include="Slice.h" />
     <ClInclude Include="Solid.h" />
+    <ClInclude Include="Thread.h" />
     <ClInclude Include="Triangle.h" />
     <ClInclude Include="Vector.h" />
   </ItemGroup>
