@@ -10,3 +10,7 @@
 *.lai
 *.la
 *.a
+
+/Debug/ProcessPlanning.pdb
+/Debug/ProcessPlanning.exe
+/Debug/ProcessPlanning.ilk
