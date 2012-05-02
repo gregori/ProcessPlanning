@@ -22,4 +22,14 @@ namespace ProcessPlanning
 	{
 		return fileName;
 	}
+
+	void setSTLMesh(Mesh* m)
+	{
+		stlMesh = m;
+	}
+
+	Mesh* getSTLMesh(void) const
+	{
+		return stlMesh;
+	}
 }

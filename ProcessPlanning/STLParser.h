@@ -12,6 +12,7 @@ namespace ProcessPlanning
 	{
 	private:
 		string fileName;
+		Mesh* stlMesh;
 		
 		//methods
 		virtual bool checkSTLFile(void)=0;
@@ -21,6 +22,8 @@ namespace ProcessPlanning
 		virtual ~STLParser(void);
 		virtual Mesh* parseFile(void)=0;
 		string getFileName(void) const;
+		void setSTLMesh(Mesh* m);
+		Mesh* getSTLMesh(void) const;
 	};
 
 

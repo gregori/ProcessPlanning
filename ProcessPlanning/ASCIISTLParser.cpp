@@ -1,6 +1,8 @@
 #include "ASCIISTLParser.h"
+#include "Mesh.h"
 #include <string>
 #include <fstream>
+#include <boost/regex.hpp>
 using namespace std;
 
 namespace ProcessPlanning
@@ -14,9 +16,25 @@ namespace ProcessPlanning
 	{
 	}
 
+	Vector* ASCIISTLParser::getNormal(string line)
+	{
+		regex rNormal("facet normal ([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?) ([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?) ([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?)");
+	
+	}
+
+	Point* ASCIISTLParser::getVertex(string line)
+	{
+		regex rVertex("vertex ([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?) ([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?) ([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?)");
+	}
+
 	Mesh* ASCIISTLParser::parseFile(void)
 	{
 		string fn = getFileName(); // STL filename
+		Mesh* m = new Mesh();
+
+		ifstream input(fn.c_str());
+		string line;
+
 		return NULL;
 	}
 
@@ -33,7 +51,9 @@ namespace ProcessPlanning
 			throw "Could not open STL file!";
 		}
 
+		// TODO: Better checking
 
+		input.close();
 	}
 
 }
