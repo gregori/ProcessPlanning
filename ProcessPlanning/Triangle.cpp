@@ -7,7 +7,6 @@ namespace ProcessPlanning
 	{
 	}
 
-
 	Triangle::~Triangle(void)
 	{
 	}
@@ -21,5 +20,15 @@ namespace ProcessPlanning
 	{
 		return zMin;
 	}
+
+    void Triangle::setVector ( Vector* v )
+    {
+        normal = v;
+    }
+
+    void Triangle::addVertex(Point* p)
+    {
+        addGeometry(static_cast<Geometry*>(p));
+    }
 
 }
