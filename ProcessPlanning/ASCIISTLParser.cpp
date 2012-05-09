@@ -38,7 +38,7 @@ namespace ProcessPlanning
         Point* p;
 
         if (regex_match(line, content, rVertex))
-        {
+        {   // TODO: need to use the PointFactory
             p = new Point(content[0], content[1], content[2]);
         }
         return p;

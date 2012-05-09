@@ -17,8 +17,10 @@ namespace ProcessPlanning
 		~Triangle(void);
 		float getZMin() const;
 		float getZMax() const;
-        void addVertex(Point* p);
-        void addVector(Vector* v);
+        void addVertex(const Point* p);
+        void setVector(const Vector* v);
+        Vector* getVector(void) const;
+        bool operator==(const Triangle &t) const;
 	};
 
 }

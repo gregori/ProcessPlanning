@@ -27,6 +27,8 @@ public:
 
 	virtual float* getCoords() const;
 
+    bool operator==(const SipleGeometry &sg) const; 
+    bool operator!=(const SipleGeometry &sg) const; 
 };
 
 }
