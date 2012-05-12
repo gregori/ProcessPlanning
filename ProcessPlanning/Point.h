@@ -8,5 +8,9 @@ namespace ProcessPlanning
 	public:
 		Point(const float x=0.0, const float y=0.0, const float z=0.0);
 		~Point();
+        bool operator==(const Point &p) const;
+        bool operator!=(const Point &p) const;
+        bool operator<(const Point &p) const;
+        bool operator>(const Point &p) const;
 	};
 }
