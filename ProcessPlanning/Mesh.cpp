@@ -1,4 +1,5 @@
 #include "Mesh.h"
+#include "Triangle.h"
 
 namespace ProcessPlanning
 {
@@ -11,24 +12,15 @@ namespace ProcessPlanning
 	{
 	}
 
-	void Mesh::addNormal(const float x, const float y, const float z)
+	void Mesh::addTriangle(Triangle* t)
 	{
+        insert(static_cast<ComplexGeometry*> t);
 	}
 
-	void Mesh::addNormal(Vector* v)
-	{
-	}
-
-	void Mesh::addVertex(const float x, const float y, const float z)
-	{
-	}
-
-
-	void Mesh::addVertex(Point* p)
-	{
-	}
-
-
+    Triangle* Mesh::getTriangle(Triangle* t) const
+    {
+        //traverse list and compares the triangle
+    }
 
 }
 

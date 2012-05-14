@@ -10,6 +10,7 @@ namespace ProcessPlanning
 
 	PointFactory::~PointFactory(void)
 	{
+        //TODO: Clean Point Vector
 	}
 
 	Point* PointFactory::getPoint(const float x, const float y, const float z)

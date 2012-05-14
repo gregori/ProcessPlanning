@@ -1,5 +1,5 @@
 #pragma once
-#include <list>
+#include <vector>
 #include "Geometry.h"
 using namespace std;
 
@@ -8,7 +8,8 @@ namespace ProcessPlanning
 	class GeometryList
 	{
 	protected:
-		list<Geometry*> lGeom;
+		vector<Geometry*> lGeom;
+        vector<Geometry*>::iterator lgit;
 
 	public:
 		GeometryList(void);
