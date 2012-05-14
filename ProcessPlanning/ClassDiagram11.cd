@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProcessPlanning::ComplexGeometry" Collapsed="true">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAEAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>ComplexGeometry.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::Contour" Collapsed="true">
+    <Position X="5.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Contour.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::Geometry" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Geometry.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::GeometryList" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIBAgAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeometryList.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::Offset" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Offset.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::Point" Collapsed="true">
+    <Position X="17" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Point.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::PointFactory" Collapsed="true">
+    <Position X="23.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAACA=</HashCode>
+      <FileName>PointFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::Raster" Collapsed="true">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Raster.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::Rect" Collapsed="true">
+    <Position X="12.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACCAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rect.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::SimpleGeometry" Collapsed="true">
+    <Position X="18.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQAAgAAAAAAAWAAAAAAAAAAAAAABgAWABAAA=</HashCode>
+      <FileName>SimpleGeometry.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::Slice" Collapsed="true">
+    <Position X="1.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Slice.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::Solid" Collapsed="true">
+    <Position X="8" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Solid.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::Thread" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgiAASAAAAAgAAAIAAAAAAAAAAAACAAAAAAAAAE=</HashCode>
+      <FileName>Thread.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::Triangle" Collapsed="true">
+    <Position X="14.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAACAIAAgAADAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Triangle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::Vector" Collapsed="true">
+    <Position X="19.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Vector.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::Mesh" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Mesh.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessPlanning::STLParser" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAQAAAAAAAUAAAAQAAAA=</HashCode>
+      <FileName>STLParser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
