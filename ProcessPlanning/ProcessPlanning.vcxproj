@@ -59,6 +59,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Program Files %28x86%29\boost\boost_1_47\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -83,8 +84,11 @@
     <ClCompile Include="ComplexGeometry.cpp" />
     <ClCompile Include="Contour.cpp" />
     <ClCompile Include="GeometryList.cpp" />
+    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="GraphicsImp.cpp" />
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="Offset.cpp" />
+    <ClCompile Include="OpenGLImp.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Raster.cpp" />
     <ClCompile Include="Rect.cpp" />
@@ -103,8 +107,11 @@
     <ClInclude Include="Contour.h" />
     <ClInclude Include="Geometry.h" />
     <ClInclude Include="GeometryList.h" />
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="GraphicsImp.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Offset.h" />
+    <ClInclude Include="OpenGLImp.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="Raster.h" />
     <ClInclude Include="Rect.h" />
