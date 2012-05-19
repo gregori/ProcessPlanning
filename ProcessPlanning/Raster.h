@@ -7,8 +7,9 @@ namespace ProcessPlanning {
 		public ComplexGeometry
 	{
 	public:
-		Raster(void);
+		Raster(Graphics* imp = NULL);
 		~Raster(void);
+		virtual void render(void) const;
 	};
 
 }

@@ -13,18 +13,19 @@ namespace ProcessPlanning
 		float zMax;
         Vector* normal;
 	public:
-		Triangle(void);
+		Triangle(Graphics* imp = NULL);
 		~Triangle(void);
 		float getZMin() const;
 		float getZMax() const;
-        void addVertex(const Point* p);
-        void setVector(const Vector* v);
+        void addVertex(Point* p);
+        void setVector(Vector* v);
         Point* getV1(void) const;
         Point* getV2(void) const;
         Point* getV3(void) const;
         Vector* getVector(void) const;
         bool operator==(const Triangle &t) const;
         bool operator!=(const Triangle &t) const;
+		virtual void render(void) const;
 	};
 
 }

@@ -12,7 +12,7 @@ protected:
 	float z;
 	
 public:
-	SimpleGeometry(const float x = 0.0, const float y = 0.0, const float z = 0.0);
+	SimpleGeometry(const float x = 0.0, const float y = 0.0, const float z = 0.0, Graphics* imp = NULL);
 	~SimpleGeometry(void);
 	
 	//getters
@@ -27,8 +27,10 @@ public:
 
 	virtual float* getCoords() const;
 
-    bool operator==(const SipleGeometry &sg) const; 
-    bool operator!=(const SipleGeometry &sg) const; 
+    bool operator==(const SimpleGeometry &sg) const; 
+    bool operator!=(const SimpleGeometry &sg) const; 
+
+	virtual void render() const = 0;
 };
 
 }

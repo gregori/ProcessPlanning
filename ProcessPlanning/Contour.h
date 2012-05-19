@@ -8,8 +8,9 @@ namespace ProcessPlanning
 		public ComplexGeometry
 	{
 	public:
-		Contour(void);
+		Contour(Graphics* imp = NULL);
 		~Contour(void);
+		virtual void render(void) const;
 	};
 
 }

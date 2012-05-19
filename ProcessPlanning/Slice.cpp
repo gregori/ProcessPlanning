@@ -1,19 +1,19 @@
-#include "Solid.h"
+#include "Slice.h"
 
 namespace ProcessPlanning
 {
 
-	Solid::Solid(Graphics* imp)
+	Slice::Slice(Graphics* imp)
 		: ComplexGeometry(imp)
 	{
 	}
 
 
-	Solid::~Solid(void)
+	Slice::~Slice(void)
 	{
 	}
 
-	void Solid::render(void) const
+	void Slice::render(void) const
 	{
 		ifImp->render(this);
 	}

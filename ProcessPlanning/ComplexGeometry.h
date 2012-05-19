@@ -1,6 +1,7 @@
 #pragma once
 #include "Geometry.h"
 #include "GeometryList.h"
+#include "Graphics.h"
 
 namespace ProcessPlanning
 {
@@ -10,9 +11,10 @@ namespace ProcessPlanning
 	protected:
 		GeometryList geomList;
 	public:
-		ComplexGeometry(void);
+		ComplexGeometry(Graphics* imp = NULL);
 		~ComplexGeometry(void);
 		void addGeometry(Geometry* geom);
+		virtual void render() const = 0;
 	};
 
 }

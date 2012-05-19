@@ -8,7 +8,7 @@ namespace ProcessPlanning
 		public Contour
 	{
 	public:
-		Offset(void);
+		Offset(Graphics* imp = NULL);
 		~Offset(void);
 	};
 

@@ -3,7 +3,8 @@
 namespace ProcessPlanning
 {
 
-	Offset::Offset(void)
+	Offset::Offset(Graphics* imp)
+		: Contour(imp)
 	{
 	}
 

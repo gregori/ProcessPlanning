@@ -1,20 +1,25 @@
 #pragma once
 
-namespace ProcessPlanning {
+#include "Graphics.h"
+
+#ifndef NULL
+#define NULL 0
+#endif
+
+namespace ProcessPlanning 
+{
 
 class Geometry
 {
 public:
 
-	Geometry(void)
-	{
-	}
+	Geometry(Graphics* imp = NULL);
+	virtual ~Geometry(void);
 
-	virtual ~Geometry(void)
-	{
-	}
+	virtual void render(void) const = 0;
 
-	virtual float* getCoords() const = 0;
+protected:
+	Graphics* ifImp;
 };
 
 }

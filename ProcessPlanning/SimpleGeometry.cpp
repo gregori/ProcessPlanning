@@ -3,7 +3,8 @@
 namespace ProcessPlanning 
 {
 
-	SimpleGeometry::SimpleGeometry(const float x, const float y, const float z)
+	SimpleGeometry::SimpleGeometry(const float x, const float y, const float z, Graphics* imp)
+		: Geometry(imp)
 	{
 		setX(x);
 		setY(y);

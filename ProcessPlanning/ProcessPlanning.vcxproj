@@ -83,6 +83,7 @@
     <ClCompile Include="ASCIISTLParser.cpp" />
     <ClCompile Include="ComplexGeometry.cpp" />
     <ClCompile Include="Contour.cpp" />
+    <ClCompile Include="Geometry.cpp" />
     <ClCompile Include="GeometryList.cpp" />
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="GraphicsImp.cpp" />
@@ -109,6 +110,7 @@
     <ClInclude Include="GeometryList.h" />
     <ClInclude Include="Graphics.h" />
     <ClInclude Include="GraphicsImp.h" />
+    <ClInclude Include="List.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Offset.h" />
     <ClInclude Include="OpenGLImp.h" />

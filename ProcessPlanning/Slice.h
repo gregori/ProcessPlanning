@@ -1,15 +1,16 @@
 #pragma once
+
 #include "ComplexGeometry.h"
 
 namespace ProcessPlanning
 {
 
-	class Solid :
+	class Slice :
 		public ComplexGeometry
 	{
 	public:
-		Solid(Graphics* imp = NULL);
-		~Solid(void);
+		Slice(Graphics* imp = NULL);
+		~Slice(void);
 		virtual void render(void) const;
 	};
 

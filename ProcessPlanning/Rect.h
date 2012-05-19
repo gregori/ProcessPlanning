@@ -8,8 +8,9 @@ namespace ProcessPlanning
 		public ComplexGeometry
 	{
 	public:
-		Rect(void);
+		Rect(Graphics* imp = NULL);
 		~Rect(void);
+		virtual void render(void) const;
 	};
 
 }

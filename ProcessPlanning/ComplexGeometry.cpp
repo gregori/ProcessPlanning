@@ -2,7 +2,8 @@
 
 namespace ProcessPlanning
 {
-	ComplexGeometry::ComplexGeometry(void)
+	ComplexGeometry::ComplexGeometry(Graphics* imp)
+		: Geometry(imp)
 	{
 	}
 

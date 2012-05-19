@@ -3,7 +3,8 @@
 namespace ProcessPlanning
 {
 
-	Triangle::Triangle(void)
+	Triangle::Triangle(Graphics* imp)
+		: ComplexGeometry(imp)
 	{
 	}
 
@@ -21,7 +22,7 @@ namespace ProcessPlanning
 		return zMin;
 	}
 
-    void Triangle::setVector (const Vector* v)
+    void Triangle::setVector (Vector* v)
     {
         normal = v;
     }
@@ -33,20 +34,20 @@ namespace ProcessPlanning
 
     Point* Triangle::getV1(void) const
     {
-        return geomList[0];
+        return static_cast<Point*>(geomList.get(0));
     }
 
     Point* Triangle::getV2(void) const
     {
-        return geomList[1];
+        return static_cast<Point*>(geomList.get(1));
     }
 
     Point* Triangle::getV3(void) const
     {
-        return geomList[2];
+        return static_cast<Point*>(geomList.get(2));
     }
 
-    void Triangle::addVertex(const Point* p)
+    void Triangle::addVertex(Point* p)
     {
         addGeometry(static_cast<Geometry*>(p));
     }
@@ -67,5 +68,10 @@ namespace ProcessPlanning
             return false;
         return true;
     }
+
+	void Triangle::render(void) const
+	{
+		ifImp->render(this);
+	}
 
 }

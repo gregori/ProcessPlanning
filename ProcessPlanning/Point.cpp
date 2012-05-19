@@ -2,8 +2,8 @@
 
 namespace ProcessPlanning
 {
-	Point::Point(const float x, const float y, const float z)
-		: SimpleGeometry(x, y, z)
+	Point::Point(const float x, const float y, const float z, Graphics* imp)
+		: SimpleGeometry(x, y, z, imp)
 	{
 	}
 
@@ -31,4 +31,9 @@ namespace ProcessPlanning
     { // For simplicity, we compare only the Z coord
         return (this->z > p.z);
     }		/* -----  end of method Point::operator!=  ----- */
+
+	void Point::render(void) const
+	{
+		ifImp->render(this);
+	}
 }

@@ -3,13 +3,19 @@
 namespace ProcessPlanning 
 {
 
-	Rect::Rect(void)
+	Rect::Rect(Graphics* imp)
+		: ComplexGeometry(imp)
 	{
 	}
 
 
 	Rect::~Rect(void)
 	{
+	}
+
+	void Rect::render(void) const
+	{
+		ifImp->render(this);
 	}
 
 }

@@ -1,20 +1,19 @@
 #pragma once
-#include <vector>
+#include "List.h"
 #include "Geometry.h"
-using namespace std;
 
 namespace ProcessPlanning
 {
 	class GeometryList
 	{
 	protected:
-		vector<Geometry*> lGeom;
-        vector<Geometry*>::iterator lgit;
+		List<Geometry> lGeom;
 
 	public:
 		GeometryList(void);
 		~GeometryList(void);
 		void insert(Geometry* item);
+		Geometry* get(int index) const;
 	};
 
 }

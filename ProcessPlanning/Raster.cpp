@@ -3,7 +3,8 @@
 namespace ProcessPlanning
 {
 
-	Raster::Raster(void)
+	Raster::Raster(Graphics* imp)
+		: ComplexGeometry(imp)
 	{
 	}
 
@@ -12,4 +13,8 @@ namespace ProcessPlanning
 	{
 	}
 
+	void Raster::render(void) const
+	{
+		ifImp->render(this);
+	}
 }
