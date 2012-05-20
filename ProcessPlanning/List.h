@@ -3,7 +3,6 @@
 #ifndef NULL
 #define NULL 0
 #endif
-using namespace ProcessPlanning;
 
 namespace ProcessPlanning
 {
