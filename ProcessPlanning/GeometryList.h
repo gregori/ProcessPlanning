@@ -4,6 +4,8 @@
 
 namespace ProcessPlanning
 {
+	class Geometry;
+
 	class GeometryList
 	{
 	protected:

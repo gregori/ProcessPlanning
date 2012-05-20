@@ -4,6 +4,7 @@
 #include <algorithm>
 
 using namespace std;
+using namespace ProcessPlanning;
 
 namespace ProcessPlanning
 {

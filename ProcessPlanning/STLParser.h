@@ -2,7 +2,9 @@
 #include "Thread.h"
 #include "Mesh.h"
 #include <string>
+
 using namespace std;
+using namespace ProcessPlanning;
 
 namespace ProcessPlanning
 {

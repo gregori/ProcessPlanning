@@ -1,7 +1,9 @@
 #pragma once
 #include "SimpleGeometry.h"
+using namespace ProcessPlanning;
 
-namespace ProcessPlanning {
+namespace ProcessPlanning 
+{
 
 	class Vector :
 		public SimpleGeometry

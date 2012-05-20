@@ -1,7 +1,10 @@
 #pragma once
 #include "ComplexGeometry.h"
 
-namespace ProcessPlanning {
+using namespace ProcessPlanning;
+
+namespace ProcessPlanning 
+{
 
 	class Raster :
 		public ComplexGeometry

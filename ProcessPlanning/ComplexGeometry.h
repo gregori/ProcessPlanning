@@ -3,6 +3,8 @@
 #include "GeometryList.h"
 #include "Graphics.h"
 
+using namespace ProcessPlanning;
+
 namespace ProcessPlanning
 {
 	class ComplexGeometry :

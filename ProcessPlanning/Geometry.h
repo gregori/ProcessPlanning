@@ -8,18 +8,17 @@
 
 namespace ProcessPlanning 
 {
+	class Geometry
+	{
+	public:
 
-class Geometry
-{
-public:
+		Geometry(Graphics* imp = NULL);
+		virtual ~Geometry(void);
 
-	Geometry(Graphics* imp = NULL);
-	virtual ~Geometry(void);
+		virtual void render(void) = 0;
 
-	virtual void render(void) = 0;
-
-protected:
-	Graphics* ifImp;
-};
+	protected:
+		Graphics* ifImp;
+	};
 
 }

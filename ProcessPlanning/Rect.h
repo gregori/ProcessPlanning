@@ -1,5 +1,8 @@
 #pragma once
 #include "ComplexGeometry.h"
+#include "Graphics.h"
+
+using namespace ProcessPlanning;
 
 namespace ProcessPlanning
 {

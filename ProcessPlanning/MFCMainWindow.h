@@ -2,6 +2,7 @@
 
 #include <afxwin.h>
 #include "resource.h"
+using namespace ProcessPlanning;
 
 class MFCMainWindow :
 	public CFrameWnd

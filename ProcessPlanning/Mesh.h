@@ -3,6 +3,8 @@
 #include "Point.h"
 #include "Vector.h"
 
+using namespace ProcessPlanning;
+
 namespace ProcessPlanning
 {
 

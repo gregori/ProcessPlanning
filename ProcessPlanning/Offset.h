@@ -1,6 +1,8 @@
 #pragma once
 #include "Contour.h"
 
+using namespace ProcessPlanning;
+
 namespace ProcessPlanning
 {
 

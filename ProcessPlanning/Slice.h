@@ -2,6 +2,8 @@
 
 #include "ComplexGeometry.h"
 
+using namespace ProcessPlanning;
+
 namespace ProcessPlanning
 {
 

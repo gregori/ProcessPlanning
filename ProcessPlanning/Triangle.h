@@ -2,6 +2,7 @@
 #include "ComplexGeometry.h"
 #include "Vector.h"
 #include "Point.h"
+using namespace ProcessPlanning;
 
 namespace ProcessPlanning
 {

@@ -4,6 +4,8 @@
 #include "Rect.h"
 #include "ComplexGeometry.h"
 
+using namespace ProcessPlanning;
+
 namespace ProcessPlanning
 {
 	class GraphicsImp
