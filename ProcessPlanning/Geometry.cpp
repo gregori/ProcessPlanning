@@ -12,4 +12,9 @@ namespace ProcessPlanning
 		ifImp = NULL;
 	}
 
+	void Geometry::render(void)
+	{
+		throw "Not callable from Geometry";
+	}
+
 }

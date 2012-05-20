@@ -15,7 +15,7 @@ namespace ProcessPlanning
 		Geometry(Graphics* imp = NULL);
 		virtual ~Geometry(void);
 
-		virtual void render(void) = 0;
+		virtual void render(void);
 
 	protected:
 		Graphics* ifImp;

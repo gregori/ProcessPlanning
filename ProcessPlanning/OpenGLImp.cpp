@@ -49,10 +49,10 @@ namespace ProcessPlanning
 		glMatrixMode(GL_MODELVIEW);
 	}
 
-	void OpenGLImp::drawPoint(Point* p)
-	{
-		glVertex3f(p->getX(), p->getY(), p->getZ());
-	}
+	//void OpenGLImp::drawPoint(Point* p)
+	//{
+	//	glVertex3f(p->getX(), p->getY(), p->getZ());
+	//}
 
 	void OpenGLImp::prepareRenderPolygon(void)
 	{

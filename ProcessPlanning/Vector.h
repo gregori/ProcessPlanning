@@ -1,6 +1,5 @@
 #pragma once
 #include "SimpleGeometry.h"
-using namespace ProcessPlanning;
 
 namespace ProcessPlanning 
 {
