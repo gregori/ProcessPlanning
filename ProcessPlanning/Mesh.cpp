@@ -29,7 +29,9 @@ namespace ProcessPlanning
 
 	void Mesh::render(void)
 	{
+		ifImp->prepareRender(this);
 		geomList.renderAllGeometries();
+		ifImp->finishRender();
 	}
 }
 

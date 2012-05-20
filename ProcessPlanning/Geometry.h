@@ -16,7 +16,7 @@ public:
 	Geometry(Graphics* imp = NULL);
 	virtual ~Geometry(void);
 
-	virtual void render(void) const = 0;
+	virtual void render(void) = 0;
 
 protected:
 	Graphics* ifImp;

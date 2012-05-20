@@ -10,7 +10,7 @@ namespace ProcessPlanning
 	public:
 		Contour(Graphics* imp = NULL);
 		~Contour(void);
-		virtual void render(void) const;
+		virtual void render(void);
 	};
 
 }

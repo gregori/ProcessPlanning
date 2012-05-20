@@ -10,7 +10,7 @@ namespace ProcessPlanning
 	public:
 		Rect(Graphics* imp = NULL);
 		~Rect(void);
-		virtual void render(void) const;
+		virtual void render(void);
 	};
 
 }

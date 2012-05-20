@@ -13,9 +13,11 @@ namespace ProcessPlanning
 	{
 	}
 
-	void Rect::render(void) const
+	void Rect::render(void)
 	{
-		ifImp->render(this);
+		ifImp->prepareRender(this);
+		geomList.renderAllGeometries();
+		ifImp->finishRender();
 	}
 
 }

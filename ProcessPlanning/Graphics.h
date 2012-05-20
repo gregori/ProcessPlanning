@@ -22,13 +22,13 @@ namespace ProcessPlanning
 		~Graphics();
 
 		void render(Point* p);
-		void render(Rect* r);
-		void render(Triangle* t);
-		void render(Slice* s);
-		void render(Raster* r);
-		void render(Contour* c);
-		void render(Mesh* m);
-		void render(Solid* s);
+		void prepareRender(Point* p);
+		void prepareRender(Rect* r);
+		void prepareRender(Triangle* t);
+		void prepareRender(Raster* r);
+		void prepareRender(Contour* c);
+		void prepareRender(Mesh* m);
+		void finishRender(void);
 		void resizeView(float posX, float posY);
 
 	};

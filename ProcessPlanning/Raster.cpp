@@ -13,8 +13,10 @@ namespace ProcessPlanning
 	{
 	}
 
-	void Raster::render(void) const
+	void Raster::render(void)
 	{
-		ifImp->render(this);
+		ifImp->prepareRender(this);
+		geomList.renderAllGeometries();
+		ifImp->finishRender();
 	}
 }

@@ -25,7 +25,7 @@ namespace ProcessPlanning
         Vector* getVector(void) const;
         bool operator==(const Triangle &t) const;
         bool operator!=(const Triangle &t) const;
-		virtual void render(void) const;
+		virtual void render(void);
 	};
 
 }

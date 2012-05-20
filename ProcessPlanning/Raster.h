@@ -9,7 +9,7 @@ namespace ProcessPlanning {
 	public:
 		Raster(Graphics* imp = NULL);
 		~Raster(void);
-		virtual void render(void) const;
+		virtual void render(void);
 	};
 
 }

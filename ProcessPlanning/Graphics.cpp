@@ -12,24 +12,39 @@ namespace ProcessPlanning
 		imp = NULL;
 	}
 
-	void Graphics::drawPoint(Point *p)
+	void Graphics::prepareRender(Rect *r)
 	{
-		imp->drawPoint(p);
+		imp->prepareRenderRect();
 	}
 
-	void Graphics::drawRect(Rect *r)
+	void Graphics::prepareRender(Triangle *t)
 	{
-		imp->drawRect(r);
+		imp->prepareRenderTriangle();
 	}
 
-	void Graphics::draw2dPolygon(ComplexGeometry *cg)
+	void Graphics::prepareRender(Contour *C)
 	{
-		imp->draw2dGeometry(cg);
+		imp->prepareRenderPolygon();
 	}
 
-	void Graphics::draw3dPolygon(ComplexGeometry *cg)
+	void Graphics::prepareRender(Raster* r)
 	{
-		imp->draw3dGeometry(cg)
+		imp->prepareRenderRect();
+	}
+
+	void Graphics::prepareRender(Mesh* m)
+	{
+		imp->prepareRenderTriangle();
+	}
+
+	void Graphics::render(Point *p)
+	{
+		imp->render(p);
+	}
+
+	void Graphics::finishRender(void)
+	{
+		imp->finishRender();
 	}
 
 	void Graphics::resizeView(float posX, float posY)

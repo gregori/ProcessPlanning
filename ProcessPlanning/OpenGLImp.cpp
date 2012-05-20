@@ -51,23 +51,29 @@ namespace ProcessPlanning
 
 	void OpenGLImp::drawPoint(Point* p)
 	{
-		glBegin(GL_POINTS);
-			glVertex3f(p->getX(), p->getY(), p->getZ());
-		glEnd();
+		glVertex3f(p->getX(), p->getY(), p->getZ());
 	}
 
-	void OpenGLImp::drawTriangle(Triangle* t)
+	void OpenGLImp::prepareRenderPolygon(void)
 	{
-		Point *v1, *v2, *v3;
+		glBegin(GL_POLYGONS);
+	}
 
-		v1 = t->getV1(); v2 = t->getV2(); v3 = t->getV3();
+	void OpenGLImp::prepareRenderRect(void)
+	{
+		glBegin(GL_LINES);
+	}
 
+	void OpenGLImp::prepareRenderTriangle(void)
+	{
 		glBegin(GL_TRIANGLES);
-			glVertex3f( v1->getX(), v1->getY(), v1->getZ());
-			glVertex3f( v2->getX(), v2->getY(), v2->getZ());
-			glVertex3f( v3->getX(), v3->getY(), v3->getZ());
+	}
+
+	void OpenGLImp::finishRender(void)
+	{
 		glEnd();
 	}
+	
 
 	void OpenGLImp::clearScreen(void)
 	{

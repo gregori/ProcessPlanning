@@ -16,17 +16,17 @@ namespace ProcessPlanning
 	{
 	}
 
-	float SimpleGeometry::getX() const
+	float SimpleGeometry::getX(void) const
 	{
 		return x;
 	}
 
-	float SimpleGeometry::getY() const
+	float SimpleGeometry::getY(void) const
 	{
 		return y;
 	}
 
-	float SimpleGeometry::getZ() const
+	float SimpleGeometry::getZ(void) const
 	{
 		return z;
 	}
@@ -46,7 +46,7 @@ namespace ProcessPlanning
 		this->z = z;
 	}
 
-	float* SimpleGeometry::getCoords() const
+	float* SimpleGeometry::getCoords(void) const
 	{
 		float *coords = new float[3];
 

@@ -54,6 +54,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Program Files %28x86%29\boost\boost_1_47;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -88,6 +89,7 @@
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="GraphicsImp.cpp" />
     <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="MFCMainWindow.cpp" />
     <ClCompile Include="Offset.cpp" />
     <ClCompile Include="OpenGLImp.cpp" />
     <ClCompile Include="Point.cpp" />
@@ -112,6 +114,7 @@
     <ClInclude Include="GraphicsImp.h" />
     <ClInclude Include="List.h" />
     <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MFCMainWindow.h" />
     <ClInclude Include="Offset.h" />
     <ClInclude Include="OpenGLImp.h" />
     <ClInclude Include="Point.h" />
@@ -132,6 +135,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram11.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

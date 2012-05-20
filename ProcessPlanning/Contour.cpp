@@ -13,9 +13,11 @@ namespace ProcessPlanning
 	{
 	}
 
-	void Contour::render(void) const
+	void Contour::render(void)
 	{
-		ifImp->render(this);
+		ifImp->prepareRender(this);
+		geomList.renderAllGeometries();
+		ifImp->finishRender();
 	}
 
 }

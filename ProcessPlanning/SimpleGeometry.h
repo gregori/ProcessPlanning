@@ -1,5 +1,6 @@
 #pragma once
-#include "geometry.h"
+#include "Geometry.h"
+#include "Graphics.h"
 
 namespace ProcessPlanning {
 
@@ -16,21 +17,21 @@ public:
 	~SimpleGeometry(void);
 	
 	//getters
-	float getX() const;
-	float getY() const;
-	float getZ() const;
+	float getX(void) const;
+	float getY(void) const;
+	float getZ(void) const;
 
 	//setters
 	void setX(const float x);
 	void setY(const float y);
 	void setZ(const float z);
 
-	virtual float* getCoords() const;
+	virtual float* getCoords(void) const;
 
     bool operator==(const SimpleGeometry &sg) const; 
     bool operator!=(const SimpleGeometry &sg) const; 
 
-	virtual void render() const = 0;
+	virtual void render(void) = 0;
 };
 
 }
