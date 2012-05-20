@@ -11,6 +11,42 @@ namespace ProcessPlanning
 	{
 	// List template class
 	public:
+		template <class TI>
+		class Iterator
+		{
+		private:
+			const List<TI> *list;
+			int index;
+			
+		public:
+			Iterator(const List<TI> *l)
+			{
+				list = l;
+			}
+
+			~Iterator(void) { }
+
+			void first(void)
+			{
+				index = 0;
+			}
+
+			void next(void)
+			{
+				index++;
+			}
+
+			bool isDone(void)
+			{
+				return index == (list->size - 1);
+			}
+
+			Node<TI>* get(int index)
+			{
+				return list->get(index);
+			}
+		};
+
 		template <class TN>
 		class Node
 		{
