@@ -74,14 +74,14 @@ namespace ProcessPlanning
 		int size;
 
 	public:
-		List()
+		List(void)
 		{
 			first = NULL;
 			last = NULL;
 			size = 0;
 		} // End of List
 
-		~List()
+		~List(void)
 		{
 			clearList();
 		} // End of ~List
@@ -105,19 +105,21 @@ namespace ProcessPlanning
 				last->setNext(newNode);
 				last = newNode;
 			}
+
+			size++;
 		} // End of add
 
-		Node<TL>* getFirst() const
+		Node<TL>* getFirst(void) const
 		{
 			return first;
 		} // End of getFirst
 
-		Node<TL>* getLast() const
+		Node<TL>* getLast(void) const
 		{
 			return last;
 		} // End of getLast
 
-		Node<TL>* get(int index) const
+		Node<TL>* get(const int index) const
 		{
 			int i;
 			Node<TL>* aux = first;
@@ -131,12 +133,12 @@ namespace ProcessPlanning
 			return aux;
 		}
 
-		bool isEmpty() const
+		bool isEmpty(void) const
 		{
 			return first == NULL;
 		} // End of isEmpty
 
-		void clearList()
+		void clearList(void)
 		{
 			Node<TL> aux, aux2;
 			aux = aux2 = NULL;
@@ -152,5 +154,11 @@ namespace ProcessPlanning
 			first = last = NULL;
 			delete(aux);
 		} // End of clearList
+
+		int getSize(void) const
+		{
+			return size;
+		}
+
 	};
 }

@@ -14,6 +14,8 @@ namespace ProcessPlanning
 		~GeometryList(void);
 		void insert(Geometry* item);
 		Geometry* get(int index) const;
+		void renderAllGeometries(void);
+		int getSize(void) const;
 	};
 
 }

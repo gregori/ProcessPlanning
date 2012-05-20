@@ -23,7 +23,7 @@ namespace ProcessPlanning
 		void getMaxBoundary(float &x, float &y, float &z);
 
 		Triangle* getTriangle(Triangle *t) const;
-		virtual void render(void) const;
+		virtual void render(void);
 	};
 
 }

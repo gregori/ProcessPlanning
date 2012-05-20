@@ -21,4 +21,16 @@ namespace ProcessPlanning {
 		lGeom.get(index);
 	}
 
+	void GeometryList::renderAllGeometries(void)
+	{
+		List<Geometry>::Node<Geometry> *aux;
+
+		for (aux = lGeom.getFirst(); aux->getNext() != NULL; aux = aux->getNext())
+			aux->getData()->render();
+	}
+
+	int GeometryList::getSize(void) const
+	{
+		return lGeom.getSize();
+	}
 }

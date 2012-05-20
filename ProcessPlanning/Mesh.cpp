@@ -27,9 +27,9 @@ namespace ProcessPlanning
         //traverse list and compares the triangle
     }
 
-	void Mesh::render(void) const
+	void Mesh::render(void)
 	{
-		ifImp->render(this);
+		geomList.renderAllGeometries();
 	}
 }
 

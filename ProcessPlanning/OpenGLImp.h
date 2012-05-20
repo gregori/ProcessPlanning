@@ -1,5 +1,7 @@
 #pragma once
 #include "GraphicsImp.h"
+#include <gl/GL.h>
+#include <gl/GLU.h>
 
 namespace ProcessPlanning
 {
@@ -10,7 +12,6 @@ namespace ProcessPlanning
 	private:
 		float fgColor[3];  // array for storing RGB components for foreground color
 		float bgColor[3];  // array for storing RGB components for background color
-		void openGLInit(void);
 
 	public:
 		OpenGLImp(void);
@@ -18,10 +19,11 @@ namespace ProcessPlanning
 
 		void drawPoint(Point *p);
 		void drawRect(Rect *r);
-		void draw2dGeometry(ComplexGeometry *cg);
+		void drawTriangle(Triangle *t);
 		void draw3dGeometry(ComplexGeometry *cg);
 		void resizeView(float posX, float posY);
-	
+		void openGLInit(void);
+		void clearScreen(void);
 	};
 
 }
