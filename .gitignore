@@ -11,7 +11,19 @@
 *.la
 *.a
 
+*.obj
+*.exe
+
 /Debug/ProcessPlanning.pdb
 /Debug/ProcessPlanning.exe
 /Debug/ProcessPlanning.ilk
 /ProcessPlanning.sdf
+/ProcPlan/Release
+/ProcPlan/Debug
+/Debug
+/ipch
+/Release
+/ProcPlan/Release/*.*
+/ProcPlan/Debug/*.*
+
+ProcessPlanning.sdf

@@ -55,6 +55,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glu32.lib</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -99,14 +100,22 @@
     <None Include="res\ProcPlan.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="GraphicsImp.h" />
     <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="OpenGLControl.h" />
+    <ClInclude Include="OpenGLImp.h" />
     <ClInclude Include="ProcPlan.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="GraphicsImp.cpp" />
     <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="OpenGLControl.cpp" />
+    <ClCompile Include="OpenGLImp.cpp" />
     <ClCompile Include="ProcPlan.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

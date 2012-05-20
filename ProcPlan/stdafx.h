@@ -37,6 +37,13 @@
 
 #include <afxcontrolbars.h>     // MFC support for ribbons and control bars
 
+#include <gl/GL.h>
+#include <gl/GLU.h>
+
+#include "Graphics.h"
+#include "GraphicsImp.h"
+#include "OpenGLImp.h"
+
 
 
 
