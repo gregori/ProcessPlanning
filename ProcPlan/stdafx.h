@@ -40,16 +40,36 @@
 #include <gl/GL.h>
 #include <gl/GLU.h>
 
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+#include "List.h"
+
 #include "Graphics.h"
 #include "GraphicsImp.h"
 #include "OpenGLImp.h"
-#include "Thread.h"
+
+#include "Geometry.h"
+#include "GeometryList.h"
+
+#include "SimpleGeometry.h"
+#include "Point.h"
+#include "Vector.h"
+#include "PointFactory.h"
+
+#include "ComplexGeometry.h"
+#include "Mesh.h"
+#include "Contour.h"
+#include "Offset.h"
+#include "Raster.h"
+#include "Rect.h"
+#include "Slice.h"
+#include "Solid.h"
+#include "Triangle.h"
+
 #include "STLParser.h"
 #include "ASCIISTLParser.h"
-
-
-
-
 
 
 

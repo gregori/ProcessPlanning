@@ -1,6 +1,6 @@
 #pragma once
 #include "stdafx.h"
-//#include "Mesh.h"
+
 #include <string>
 
 using namespace std;
@@ -14,18 +14,19 @@ namespace ProcessPlanning
 	{
 	private:
 		string fileName;
-		//Mesh* stlMesh;
+		Mesh* stlMesh;
 		
 		//methods
-		virtual bool checkSTLFile(void)=0;
+		virtual bool checkSTLFile(void) { return false; };
 		//void run();
 	public:
 		STLParser(const string fn="");
 		virtual ~STLParser(void);
-		//virtual Mesh* parseFile(void)=0;
+		virtual Mesh* parseFile(void) { return NULL; }
+		void setFileName(string f);
 		string getFileName(void) const;
-		//void setSTLMesh(Mesh* m);
-		//Mesh* getSTLMesh(void) const;
+		void setSTLMesh(Mesh* m);
+		Mesh* getSTLMesh(void) const;
 	};
 
 

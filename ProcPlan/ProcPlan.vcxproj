@@ -103,30 +103,63 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ASCIISTLParser.h" />
+    <ClInclude Include="ComplexGeometry.h" />
+    <ClInclude Include="Contour.h" />
+    <ClInclude Include="Geometry.h" />
+    <ClInclude Include="GeometryList.h" />
     <ClInclude Include="Graphics.h" />
     <ClInclude Include="GraphicsImp.h" />
+    <ClInclude Include="List.h" />
     <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Offset.h" />
     <ClInclude Include="OpenGLControl.h" />
     <ClInclude Include="OpenGLImp.h" />
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="PointFactory.h" />
+    <ClInclude Include="ProcessController.h" />
     <ClInclude Include="ProcPlan.h" />
+    <ClInclude Include="Raster.h" />
+    <ClInclude Include="Rect.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="SimpleGeometry.h" />
+    <ClInclude Include="Slice.h" />
+    <ClInclude Include="Solid.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="STLParser.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="Vector.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ASCIISTLParser.cpp" />
+    <ClCompile Include="ComplexGeometry.cpp" />
+    <ClCompile Include="Contour.cpp" />
+    <ClCompile Include="Geometry.cpp" />
+    <ClCompile Include="GeometryList.cpp" />
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="GraphicsImp.cpp" />
     <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Offset.cpp" />
     <ClCompile Include="OpenGLControl.cpp" />
     <ClCompile Include="OpenGLImp.cpp" />
+    <ClCompile Include="Point.cpp" />
+    <ClCompile Include="PointFactory.cpp" />
+    <ClCompile Include="ProcessController.cpp" />
     <ClCompile Include="ProcPlan.cpp" />
+    <ClCompile Include="Raster.cpp" />
+    <ClCompile Include="Rect.cpp" />
+    <ClCompile Include="SimpleGeometry.cpp" />
+    <ClCompile Include="Slice.cpp" />
+    <ClCompile Include="Solid.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="STLParser.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ProcPlan.rc" />
@@ -134,4 +167,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ProcPlan.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

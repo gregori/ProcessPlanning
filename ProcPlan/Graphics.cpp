@@ -1,4 +1,4 @@
-#include "Graphics.h"
+
 #include "stdafx.h"
 
 namespace ProcessPlanning
@@ -13,40 +13,40 @@ namespace ProcessPlanning
 		imp = NULL;
 	}
 
-	//void Graphics::prepareRender(Rect *r)
-	//{
-	//	imp->prepareRenderRect();
-	//}
+	void Graphics::prepareRender(Rect *r)
+	{
+		imp->prepareRenderRect();
+	}
 
-	//void Graphics::prepareRender(Triangle *t)
-	//{
-	//	imp->prepareRenderTriangle();
-	//}
+	void Graphics::prepareRender(Triangle *t)
+	{
+		imp->prepareRenderTriangle();
+	}
 
-	//void Graphics::prepareRender(Contour *C)
-	//{
-	//	imp->prepareRenderPolygon();
-	//}
+	void Graphics::prepareRender(Contour *C)
+	{
+		imp->prepareRenderPolygon();
+	}
 
-	//void Graphics::prepareRender(Raster* r)
-	//{
-	//	imp->prepareRenderRect();
-	//}
+	void Graphics::prepareRender(Raster* r)
+	{
+		imp->prepareRenderRect();
+	}
 
-	//void Graphics::prepareRender(Mesh* m)
-	//{
-	//	imp->prepareRenderTriangle();
-	//}
+	void Graphics::prepareRender(Mesh* m)
+	{
+		imp->prepareRenderTriangle();
+	}
 
-	//void Graphics::render(Point *p)
-	//{
-	//	imp->render(p);
-	//}
+	void Graphics::render(Point *p)
+	{
+		imp->drawPoint(p);
+	}
 
-	//void Graphics::finishRender(void)
-	//{
-	//	imp->finishRender();
-	//}
+	void Graphics::finishRender(void)
+	{
+		imp->finishRender();
+	}
 
 	void Graphics::resizeView(float posX, float posY)
 	{

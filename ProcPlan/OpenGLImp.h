@@ -1,5 +1,5 @@
 #pragma once
-#include "GraphicsImp.h"
+#include "stdafx.h"
 #include <gl/GL.h>
 #include <gl/GLU.h>
 
@@ -23,8 +23,8 @@ namespace ProcessPlanning
 		void prepareRenderTriangle(void);
 		void prepareRenderPolygon(void);
 		void finishRender(void);
-//		void drawPoint(Point *p);
-//		void draw3dGeometry(ComplexGeometry *cg);
+		void drawPoint(Point *p);
+		//void draw3dGeometry(ComplexGeometry *cg);
 		void resizeView(float posX, float posY);
 		void openGLInit(void);
 		void clearScreen(void);

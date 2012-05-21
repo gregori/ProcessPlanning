@@ -4,6 +4,8 @@
 
 #pragma once
 
+#include "stdafx.h"
+#include "ProcessController.h"
 
 // MainWindow dialog
 class MainWindow : public CDialogEx
@@ -29,4 +31,9 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnFileImportstl();
+
+private:
+	ProcessController pCtrl;
 };

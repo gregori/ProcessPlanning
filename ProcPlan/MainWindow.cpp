@@ -63,6 +63,7 @@ BEGIN_MESSAGE_MAP(MainWindow, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_COMMAND(ID_FILE_IMPORTSTL, &MainWindow::OnFileImportstl)
 END_MESSAGE_MAP()
 
 
@@ -151,3 +152,22 @@ HCURSOR MainWindow::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void MainWindow::OnFileImportstl()
+{
+	CFileDialog fd(TRUE, NULL, NULL, OFN_FILEMUSTEXIST | OFN_HIDEREADONLY, _T("StereoLythography Files (*.stl)|*.stl||"), this);
+
+	if (fd.DoModal() == IDOK)
+	{
+		CString fn = fd.GetPathName();
+		UpdateData(false);
+
+		wstring ws(fn.GetBuffer(fn.GetLength()));
+		string s(ws.begin(), ws.end());
+
+		pCtrl.parseSTLFromFile(s);
+
+		::MessageBoxA(NULL, "File parsed!", "System Information", MB_OK);
+	}
+}
