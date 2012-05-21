@@ -51,11 +51,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\boost\boost_1_47</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>opengl32.lib;glu32.lib</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;libpthreadGCE2.a</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\boost\boost_1_47\lib</AdditionalLibraryDirectories>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -100,6 +102,7 @@
     <None Include="res\ProcPlan.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ASCIISTLParser.h" />
     <ClInclude Include="Graphics.h" />
     <ClInclude Include="GraphicsImp.h" />
     <ClInclude Include="MainWindow.h" />
@@ -108,9 +111,11 @@
     <ClInclude Include="ProcPlan.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="STLParser.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ASCIISTLParser.cpp" />
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="GraphicsImp.cpp" />
     <ClCompile Include="MainWindow.cpp" />
@@ -121,6 +126,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="STLParser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ProcPlan.rc" />

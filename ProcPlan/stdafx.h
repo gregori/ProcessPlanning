@@ -43,7 +43,9 @@
 #include "Graphics.h"
 #include "GraphicsImp.h"
 #include "OpenGLImp.h"
-
+#include "Thread.h"
+#include "STLParser.h"
+#include "ASCIISTLParser.h"
 
 
 

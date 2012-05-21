@@ -51,6 +51,12 @@
     <ClInclude Include="OpenGLImp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ASCIISTLParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="STLParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ProcPlan.cpp">
@@ -72,6 +78,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="OpenGLImp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ASCIISTLParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="STLParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

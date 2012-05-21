@@ -1,10 +1,11 @@
 #pragma once
 #include "STLParser.h"
-#include "Point.h"
-#include "Vector.h"
+//#include "Point.h"
+//#include "Vector.h"
 #include <string>
+#include "stdafx.h"
 using namespace std;
-using namespace ProcessPlanning;
+
 
 namespace ProcessPlanning
 {
@@ -14,12 +15,12 @@ namespace ProcessPlanning
 	{
 	private:
 		bool checkSTLFile(void) const;
-		Vector* getNormal(string line);
-		Point* getVertex(string line);
+		//Vector* getNormal(string line);
+		//Point* getVertex(string line);
 	public:
 		ASCIISTLParser(void);
 		~ASCIISTLParser(void);
-		Mesh* parseFile(void);
+//		Mesh* parseFile(void);
 	};
 
 }

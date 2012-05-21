@@ -1,10 +1,12 @@
+#include "stdafx.h"
 #include <iostream>
 #include <stdlib.h>
 #include <pthread.h>
 using namespace std;
 
 
-namespace ProcessPlanning {
+namespace ProcessPlanning 
+{
 	class Thread {
 	private:
 		pthread_t _threadID;

@@ -1,4 +1,4 @@
-#include "STLParser.h"
+#include "stdafx.h"
 
 namespace ProcessPlanning
 {
@@ -13,23 +13,23 @@ namespace ProcessPlanning
 	{
 	}
 
-	void STLParser::run(void)
-	{
-		parseFile();
-	}
+	//void STLParser::run(void)
+	//{
+	//	//parseFile();
+	//}
 
 	string STLParser::getFileName(void) const
 	{
 		return fileName;
 	}
 
-	void setSTLMesh(Mesh* m)
-	{
-		stlMesh = m;
-	}
+	//void setSTLMesh(Mesh* m)
+	//{
+	//	stlMesh = m;
+	//}
 
-	Mesh* getSTLMesh(void) const
-	{
-		return stlMesh;
-	}
+	//Mesh* getSTLMesh(void) const
+	//{
+	//	return stlMesh;
+	//}
 }
