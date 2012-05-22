@@ -45,5 +45,6 @@ namespace ProcessPlanning
         //void setOffsetCalc(OffsetCalculator offsetCalc) const;
         //void setSlicer(Slicer slicer) const;
 		void parseSTLFromFile(string fileName);
+		Mesh* getMesh(void) const;
     };
 }

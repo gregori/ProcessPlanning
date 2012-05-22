@@ -6,6 +6,7 @@
 
 #include "stdafx.h"
 #include "ProcessController.h"
+#include "OpenGLControl.h"
 
 // MainWindow dialog
 class MainWindow : public CDialogEx
@@ -36,4 +37,9 @@ public:
 
 private:
 	ProcessController pCtrl;
+	COpenGLControl m_oglWindow;
+
+public:
+	afx_msg void OnSolidDisplaymesh();
+	afx_msg void OnSize(UINT nType, int cx, int cy);
 };

@@ -21,6 +21,7 @@ namespace ProcessPlanning
 		Graphics(GraphicsImp* implementation = NULL);
 		~Graphics();
 
+		void init(void);
 		void render(Point* p);
 		void prepareRender(Point* p);
 		void prepareRender(Rect* r);
@@ -30,6 +31,8 @@ namespace ProcessPlanning
 		void prepareRender(Mesh* m);
 		void finishRender(void);
 		void resizeView(float posX, float posY);
+		void clearScreen(void);
+		void cameraSetup(float zoom, float posX, float posY, float rotX, float rotY);
 
 	};
 }

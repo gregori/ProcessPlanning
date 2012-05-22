@@ -31,4 +31,9 @@ namespace ProcessPlanning
 		stlParser->setFileName(fileName);
 		mesh = stlParser->parseFile();
 	}
+
+	Mesh* ProcessController::getMesh(void) const
+	{
+		return mesh;
+	}
 }

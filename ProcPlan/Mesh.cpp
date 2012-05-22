@@ -30,9 +30,9 @@ namespace ProcessPlanning
 
 	void Mesh::render(void)
 	{
-		ifImp->prepareRender(this);
+		//ifImp->prepareRender(this);
 		geomList.renderAllGeometries();
-		ifImp->finishRender();
+		//ifImp->finishRender();
 	}
 }
 

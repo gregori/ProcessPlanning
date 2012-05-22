@@ -19,6 +19,8 @@ namespace ProcessPlanning
 		OpenGLImp(void);
 		~OpenGLImp(void);
 
+		void cameraSetup(float zoom, float posX, float posY, float rotX, float rotY);
+		void init(void);
 		void prepareRenderRect(void);
 		void prepareRenderTriangle(void);
 		void prepareRenderPolygon(void);

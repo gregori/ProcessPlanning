@@ -16,6 +16,21 @@ namespace ProcessPlanning
 	{
 	}
 
+	void OpenGLImp::init(void)
+	{
+		openGLInit();
+	}
+
+	void OpenGLImp::cameraSetup(float zoom, float posX, float posY, float rotX, float rotY)
+	{
+		// Camera controls
+		glLoadIdentity();
+		glTranslatef(0.0f, 0.0f, -zoom);
+		glTranslatef(posX, posY, 0.0f);
+		glRotatef(rotX, 1.0f, 0.0f, 0.0f);
+		glRotatef(rotY, 0.0f, 1.0f, 0.0f);
+	}
+
 	void OpenGLImp::openGLInit(void)
 	{
 		// Basic Setup:
@@ -44,7 +59,7 @@ namespace ProcessPlanning
 		glLoadIdentity();
  
 		// Set our current view perspective
-		gluPerspective(35.0f, (float)posX / (float)posY, 0.01f, 2000.0f);
+		gluPerspective(35.0f, posX / posY, 0.01f, 2000.0f);
  
 		// Model view
 		glMatrixMode(GL_MODELVIEW);

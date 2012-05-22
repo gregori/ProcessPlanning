@@ -64,6 +64,8 @@ BEGIN_MESSAGE_MAP(MainWindow, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_COMMAND(ID_FILE_IMPORTSTL, &MainWindow::OnFileImportstl)
+	ON_COMMAND(ID_SOLID_DISPLAYMESH, &MainWindow::OnSolidDisplaymesh)
+	ON_WM_SIZE()
 END_MESSAGE_MAP()
 
 
@@ -169,5 +171,52 @@ void MainWindow::OnFileImportstl()
 		pCtrl.parseSTLFromFile(s);
 
 		::MessageBoxA(NULL, "File parsed!", "System Information", MB_OK);
+	}
+}
+
+
+void MainWindow::OnSolidDisplaymesh()
+{
+	// TODO: Add your command handler code here
+	// Create Window
+	CRect rect;
+
+	// Get size and position of the picture control
+	GetDlgItem(IDC_OPENGL)->GetWindowRect(rect);
+
+	// Convert screen coordinates to client coordinates
+	ScreenToClient(rect);
+
+	// Create OpenGL Control window
+	m_oglWindow.oglCreate(rect, this, static_cast<Geometry*>(pCtrl.getMesh())); 
+	
+	// Setup the OpenGL Window's timer to render
+	m_oglWindow.m_unpTimer = m_oglWindow.SetTimer(1, 1, 0);
+}
+
+
+void MainWindow::OnSize(UINT nType, int cx, int cy)
+{
+	CDialogEx::OnSize(nType, cx, cy);
+
+	switch (nType)
+	{
+	case SIZE_RESTORED:
+		{
+			if (m_oglWindow.m_bIsMaximized)
+			{
+				m_oglWindow.callOnSize(nType, cx, cy);
+				m_oglWindow.m_bIsMaximized = false;
+			}
+			break;
+		}
+
+	case SIZE_MAXIMIZED:
+		{
+			m_oglWindow.callOnSize(nType, cx, cy);
+			m_oglWindow.m_bIsMaximized = true;
+
+			break;
+		}
 	}
 }

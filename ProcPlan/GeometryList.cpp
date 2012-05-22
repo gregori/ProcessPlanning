@@ -25,9 +25,13 @@ namespace ProcessPlanning {
 	void GeometryList::renderAllGeometries(void)
 	{
 		List<Geometry>::Node<Geometry> *aux;
+		Geometry* g;
 
 		for (aux = lGeom.getFirst(); aux->getNext() != NULL; aux = aux->getNext())
-			aux->getData()->render();
+		{
+			g = aux->getData();
+			g->render();
+		}
 	}
 
 	int GeometryList::getSize(void) const

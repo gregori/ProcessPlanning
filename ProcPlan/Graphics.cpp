@@ -12,6 +12,21 @@ namespace ProcessPlanning
 	{
 		imp = NULL;
 	}
+	
+	void Graphics::clearScreen(void)
+	{
+		imp->clearScreen();
+	}
+
+	void Graphics::cameraSetup(float zoom, float posX, float posY, float rotX, float rotY)
+	{
+		imp->cameraSetup(zoom, posX, posY, rotX, rotY);
+	}
+
+	void Graphics::init(void)
+	{
+		imp->init();
+	}
 
 	void Graphics::prepareRender(Rect *r)
 	{

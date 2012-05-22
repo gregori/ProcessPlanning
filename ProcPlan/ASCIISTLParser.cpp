@@ -29,8 +29,10 @@ namespace ProcessPlanning
         if (regex_match(line.c_str(), content, rNormal))
         {
 			v = new Vector(atof(content[1].str().c_str()), atof(content[3].str().c_str()), atof(content[5].str().c_str()));
+			return v;
 		}
-        return v;
+        
+		return NULL;
 	}
 
 	Point* ASCIISTLParser::getVertex(std::string line)
@@ -42,7 +44,7 @@ namespace ProcessPlanning
 
 		if (regex_match(line.c_str(), content, rVertex))
         {   // TODO: need to use the PointFactory
-			p = PointFactory.getPoint(atof(content[1].str().c_str()), atof(content[3].str().c_str()), atof(content[5].str().c_str()));
+			p = PointFactory::getPoint(atof(content[1].str().c_str()), atof(content[3].str().c_str()), atof(content[5].str().c_str()));
 			p->setInterface(new Graphics(static_cast<GraphicsImp*>(new OpenGLImp)));
 		}
         return p;
