@@ -27,7 +27,7 @@ namespace ProcessPlanning {
 		List<Geometry>::Node<Geometry> *aux;
 		Geometry* g;
 
-		for (aux = lGeom.getFirst(); aux->getNext() != NULL; aux = aux->getNext())
+		for (aux = lGeom.getFirst(); aux != NULL; aux = aux->getNext())
 		{
 			g = aux->getData();
 			g->render();

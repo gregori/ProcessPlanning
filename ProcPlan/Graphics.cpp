@@ -58,6 +58,11 @@ namespace ProcessPlanning
 		imp->drawPoint(p);
 	}
 
+	void Graphics::render(Triangle *t)
+	{
+		imp->drawTriangle(t);
+	}
+
 	void Graphics::finishRender(void)
 	{
 		imp->finishRender();

@@ -21,7 +21,7 @@ namespace ProcessPlanning
 
 	Vector* ASCIISTLParser::getNormal(std::string line)
 	{
-		regex rNormal("facet normal ([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?) ([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?) ([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?)");
+		regex rNormal("facet normal +([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?) +([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?) +([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?)");
         //boost::match_results<std::string::const_iterator> content;
 		cmatch content;
         Vector* v;
@@ -37,7 +37,7 @@ namespace ProcessPlanning
 
 	Point* ASCIISTLParser::getVertex(std::string line)
 	{
-		regex rVertex("vertex ([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?) ([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?) ([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?)");
+		regex rVertex("vertex +([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?) +([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?) +([-+]?[0-9]*.?[0-9]+([eE][-+]?[0-9]+)?)");
         //boost::match_results<std::string::const_iterator> content;
 		cmatch content;
         Point* p;
@@ -46,8 +46,9 @@ namespace ProcessPlanning
         {   // TODO: need to use the PointFactory
 			p = PointFactory::getPoint(atof(content[1].str().c_str()), atof(content[3].str().c_str()), atof(content[5].str().c_str()));
 			p->setInterface(new Graphics(static_cast<GraphicsImp*>(new OpenGLImp)));
+			return p;
 		}
-        return p;
+		return NULL;
 	}
 
 	Mesh* ASCIISTLParser::parseFile(void)

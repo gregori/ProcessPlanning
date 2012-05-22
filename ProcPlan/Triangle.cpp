@@ -73,8 +73,8 @@ namespace ProcessPlanning
 
 	void Triangle::render(void)
 	{
-		ifImp->prepareRender(this);
-		geomList.renderAllGeometries();
-		ifImp->finishRender();
+		ifImp->render(this);
+		//geomList.renderAllGeometries();
+		//ifImp->finishRender();
 	}
 }

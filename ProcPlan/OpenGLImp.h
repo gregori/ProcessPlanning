@@ -26,6 +26,7 @@ namespace ProcessPlanning
 		void prepareRenderPolygon(void);
 		void finishRender(void);
 		void drawPoint(Point *p);
+		void drawTriangle(Triangle *t);
 		//void draw3dGeometry(ComplexGeometry *cg);
 		void resizeView(float posX, float posY);
 		void openGLInit(void);

@@ -23,6 +23,7 @@ namespace ProcessPlanning
 
 		void init(void);
 		void render(Point* p);
+		void render(Triangle* t);
 		void prepareRender(Point* p);
 		void prepareRender(Rect* r);
 		void prepareRender(Triangle* t);

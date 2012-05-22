@@ -3,6 +3,7 @@
 #include "stdafx.h"
 #include "Point.h"
 #include "ComplexGeometry.h"
+#include "Triangle.h"
 
 namespace ProcessPlanning
 {
@@ -20,6 +21,7 @@ namespace ProcessPlanning
 		virtual void prepareRenderPolygon(void) = 0;
 		virtual void finishRender(void) = 0;
 		virtual void drawPoint(Point *p) = 0;
+		virtual void drawTriangle(Triangle *t) = 0;
 		//virtual void draw3dGeometry(ComplexGeometry *cg) = 0;
 		virtual void resizeView(float posX, float posY) = 0;
 		virtual void clearScreen(void) = 0;
