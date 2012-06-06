@@ -156,7 +156,8 @@ HCURSOR MainWindow::OnQueryDragIcon()
 
 
 
-void MainWindow::OnFileImportstl()
+void MainWindow::OnFileImportstl
+()
 {
 	CFileDialog fd(TRUE, NULL, NULL, OFN_FILEMUSTEXIST | OFN_HIDEREADONLY, _T("StereoLythography Files (*.stl)|*.stl||"), this);
 

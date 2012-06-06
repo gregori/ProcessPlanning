@@ -31,6 +31,7 @@ private:
 	CRect m_rect;
 	CRect m_oldWindow;
 	CRect m_originalRect;
+	bool m_created;
 	Graphics* gr;
 	Geometry* geom;
 

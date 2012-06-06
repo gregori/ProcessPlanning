@@ -19,11 +19,21 @@ namespace ProcessPlanning
 		Mesh(void);
 		~Mesh(void);
 		
-		void setMinBoundary(const float x, const float y, const float z);
-		void setMaxBoundary(const float x, const float y, const float z);
+		void setXMin(const float x);
+		void setYMin(const float y);
+		void setZMin(const float z);
 
-		void getMinBoundary(float &x, float &y, float &z);
-		void getMaxBoundary(float &x, float &y, float &z);
+		void setXMax(const float x);
+		void setYMax(const float y);
+		void setZMax(const float z);
+
+		float getXMin(void) const;
+		float getYMin(void) const;
+		float getZMin(void) const;
+
+		float getXMax(void) const;
+		float getYMax(void) const;
+		float getZMax(void) const;
 
 		Triangle* getTriangle(Triangle *t) const;
 		virtual void render(void);

@@ -80,6 +80,7 @@ namespace ProcessPlanning
             else if (find_first(line, "endloop"))
             {
                 m->addGeometry(t);
+				
                 t = NULL;
             }
         }
